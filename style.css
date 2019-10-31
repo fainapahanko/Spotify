@@ -1,0 +1,235 @@
+.main-page{
+    background: #B15C9E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B15C9E, #7393C6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B15C9E, #7393C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.gradient-main-page{
+    background-image: linear-gradient(transparent, #000);
+}
+.navbar > *, .navbar-nav > * > * {
+    color:white;
+    font-size: 16px;
+}
+.navbar-nav li  {
+    padding: 15px;
+}
+h1{
+    font-size: 54px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.main-text-content div {
+    text-align: center;
+}
+li i {
+    padding: 11px;
+}
+.navbar{
+    background: black;
+}
+#open-web-player-btn{
+    background: -webkit-linear-gradient(#00BD49, rgb(2, 150, 58));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( #00BD49, rgb(2, 150, 58)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+#open-web-player-btn:hover{
+    background: -webkit-linear-gradient(rgb(3, 201, 79), rgb(3, 163, 64));  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(rgb(3, 201, 79), rgb(3, 163, 64));  /* Chrome 10-25, Safari 5.1-6 */
+}
+.nav-link {
+    font-size: 34px;
+    font-weight: bold;
+}
+.info{
+    position: absolute;
+    top:30px;
+}
+.spotify-logo > * {
+    color: white;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    .spotify-logo > * {
+        color:white;
+        font-size: 34px;
+    } 
+    .navbar{
+        background: none;
+        background: #B15C9E;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #B15C9E, #7393C6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #B15C9E, #7393C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin: 0 !important;
+        transition:500ms ease;
+        }
+    .navbar.scrolled{
+        background:rgb(0, 0, 0, 0.5);
+    }
+    h1{
+        font-size: 80px;
+    }
+    .main-text-content div {
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 18px;
+    }
+}
+.fa-chevron-down{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 8px 5px 2px 5px;
+    border:1.5px solid white;
+    border-radius: 100%;
+    text-align: center;
+    animation: arrowDown 2s linear infinite;
+}
+.info{
+    display: none;
+}
+.info:hover{
+    display: block;
+}
+@keyframes arrowDown  {
+    0%{
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+.latest-trends{
+    background: #B15C9E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #235895, #5C2270);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #235895, #5C2270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 200px;
+}
+.container-latest-trends{
+    padding-top: 100px;
+}
+.container-latest-trends h1{
+    text-align: center;
+    color:white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-div{
+    background: rgba(21, 44, 95, 0.3);
+    height: 250px;
+}
+.img-div{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+.img-div img{
+    width:250px;
+}
+.artist-div{
+    background: rgba(21, 44, 95, 0.3);
+    width: 100px;
+    height: 30px;
+    color: white;
+    padding-left: 10px;
+    position: absolute;
+    top:80px;
+    left:20px;
+}
+.h3-div{
+    background: rgb(21, 44, 95);
+    width: 50%;
+    padding: 5px;
+    padding-left: 40px ;
+    color: white;
+    position: absolute;
+    top:120px;
+    left:30px;
+}
+.play-now-div {
+    color: rgb(28,144,106);
+    position: absolute;
+    top:210px;
+    left:60px;
+}
+.lol{
+    padding: 40px;
+}
+@media (max-width: 575.98px) { 
+    .card-div{
+        background: rgba(135, 157, 204, 0.3);
+        margin-top: 200px;
+        height: 330px;
+        justify-self: center;
+    }
+    .img-div{
+        position:absolute;
+        top:100px;
+        left:50%;
+        transform: translate(-80%,0);
+    }
+    .img-div img{
+        width:160%;
+    }
+    .artist-div{
+        background: rgba(21, 44, 95, 0.3);
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        color: white;
+        position: absolute;
+        top:50px;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+    .h3-div{
+        background: rgb(21, 44, 95);
+        width: 90%;
+        height: 60px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 440px;
+    }
+    .play-now-div {
+        color: rgb(28,144,106);
+        position: absolute;
+        left: 50%;
+        top: 550px;
+        transform: translate(-50%,-50%);
+    }
+}
+.footer{
+    background: black;
+}
+.links div{
+    margin-bottom: 20px;
+}
+.links div a{
+    color:white;
+}
+.links div:first-child a{
+    color:gray;
+    text-transform: uppercase;
+}
+.footer-icon{
+    font-size: 30px;
+    width: 50px;
+    color: white;
+    padding: 10px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 100px;
+    margin-right: 40px;
+}
+.footer-icon:hover{
+    color:rgb(7, 197, 7);
+}
+.footer-item{
+    color:white;
+    margin-top: 0;
+    font-size: 13px;
+}

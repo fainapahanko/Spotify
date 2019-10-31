@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify</title>
+</head>
+<body>
+
+    <!--Navbar starts-->
+    <nav class="navbar navbar-expand-lg px-lg-5 mx-lg-5 sticky-top">
+        <a class="navbar-brand" href="#">
+            <div class="spotify-logo">
+                <i class="fab fa-spotify"></i> <span>Spotify</span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="font-size: 30px"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Premium</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Download</a>
+                </li>
+                <li class="nav-item d-lg-inline-block d-none">
+                    <span style="font-size: 24px;">|</span>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <span style="font-size: 24px; width: 30px;">-</span>
+                </li>
+                <li class="nav-item d-lg-inline-block d-none">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/67949352_2412017852412109_3402129447262879744_n.jpg?_nc_cat=102&_nc_oc=AQlaYdpRU3B3mHM6--SFxOrHuOfOx9CMaxSq91umaYXfVzxyeJAFQe46Y73YHpZipUs&_nc_ht=scontent.xx&oh=38c84a2c84dfb58e7f708aba25c9fedc&oe=5E60D1A7" alt="YourPhoto" width=40px style="border-radius: 100%">
+                </li>
+                <li class="nav-item d-lg-inline-block d-none">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#">Account</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar ends-->
+
+    <!--Jumbotron starts-->
+    <div class="main-page">
+        <div class="gradient-main-page">
+            <div class="wrapper mx-md-5">
+                <div class="container pt-5" style="padding-bottom: 200px;">
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-12">
+                            <div class="row main-text-content">
+                                <div class="col-12 p-0">
+                                    <div>
+                                        <span style="font-size: 11px;">Recently Played</span>
+                                    </div>
+                                    <div>
+                                        <h1>Jump back in</h1>
+                                    </div>
+                                    <div>
+                                        <h3 style="font-size: 20px;" class="pr-3">Pick up your music right where you left off</h3>
+                                    </div>
+                                    <div class="my-5">
+                                        <a id="open-web-player-btn" class="btn btn-success" role="button" style="border-radius: 500px; font-size: 16px; padding: 19px 56px 21px; line-height: 1;">Open Web Player</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="row">
+                                <div class="col-md-4 col-6 p-1 albums">
+                                    <div>
+                                        <img src="http://nadzeya-makeyeva.com/uploads/images/fobos_9.png" class="card-img" alt="">
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 p-1 albums">
+                                    <div>
+                                        <img src="https://www.thisdayinmusic.com/wp-content/uploads/2018/05/ok-computer.jpg" class="card-img"  alt="">
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 p-1 albums"> 
+                                    <div>
+                                        <img src="http://images.genius.com/133679ee821526412e00bd82af7336b5.1000x1000x1.jpg" class="card-img" alt="">
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 p-1 albums">
+                                    <div>
+                                        <img src="https://images.genius.com/802f2f51781f25232eae5349cf7b1130.1000x1000x1.jpg" class="card-img" alt="">
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 p-1 albums">
+                                    <div>
+                                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d0/18/71/d018712d-13c1-8629-be54-3b360a467e1a/05099960946652.rgb.jpg/600x600bf.png" class="card-img"  alt="">  
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 p-1 albums"> 
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/81hZQ2H1wHL._SS500_.jpg" class="card-img" alt="">
+                                        <div class="info">
+                                            <h4>Phobos</h4>
+                                            <h5>Petlya Pristrastiya</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-down" style="text-align: center;">
+                            <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!--Jumbotron ends-->
+    <!--Latest trends-->
+    <div class="latest-trends">
+        <div class="container">
+            <div class="container-latest-trends">
+                <h1>Your latest listening trends</h1>
+            </div>
+            <div class="row mt-5 pt-5">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 lol">
+                    <div class="card-div">
+                        <div class="img-div">
+                            <img src="https://i.pinimg.com/originals/9a/bf/05/9abf0521df802d09eeae663eb9ee2042.jpg" class="card-img" alt="">
+                        </div> 
+                        <div class="artist-div">
+                            <span>Top artist</span>
+                        </div>   
+                        <div class="h3-div">
+                            <h3>Nicolas Jaar</h3>
+                        </div>  
+                        <div class="play-now-div">
+                            <span>Play now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 lol">
+                    <div class="card-div">
+                        <div class="img-div">
+                            <img src="http://s3.amazonaws.com/quietus_production/images/articles/12991/moderat_1375693713_crop_560x550.0.jpg" class="card-img" alt="">
+                        </div> 
+                        <div class="artist-div">
+                            <span>Top artist</span>
+                        </div>   
+                        <div class="h3-div">
+                            <h3>Christian Löffler</h3>
+                        </div>  
+                        <div class="play-now-div">
+                            <span>Play now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="p-5">
+            <div class="row">
+                <div class="col-lg-2 col-sm-12">
+                    <div class="spotify-logo py-5"> 
+                        <i class="fab fa-spotify"></i> <span>Spotify</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row">
+                        <div class="links col-lg-4 col-12 mt-4">
+                            <div> 
+                                <a href="">COMPANY</a>
+                            </div>
+                            <div> 
+                                <a href="">About</a>
+                            </div>
+                            <div> 
+                                <a href="">Jobs</a>
+                            </div>
+                            <div> 
+                                <a href="">For the Record</a>
+                            </div>
+                        </div>
+                        <div class="links col-lg-4 col-12 mt-4">
+                            <div> 
+                                <a href="">COMMUNITIES</a>
+                            </div>
+                            <div> 
+                                <a href="">For Artists</a>
+                            </div>
+                            <div> 
+                                <a href="">Developers</a>
+                            </div>
+                            <div> 
+                                <a href="">Brands</a>
+                            </div>
+                            <div> 
+                                <a href="">Investors</a>
+                            </div>
+                            <div> 
+                                <a href="">Vendors</a>
+                            </div>
+                        </div>
+                        <div class="links col-lg-4 col-12 mt-4">
+                            <div> 
+                                <a href="">Useful links</a>
+                            </div>
+                            <div> 
+                                <a href="">Help</a>
+                            </div>
+                            <div> 
+                                <a href="">Web Player</a>
+                            </div>
+                            <div> 
+                                <a href="">Free Mobile App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-4">
+                    <i class="fab fa-instagram footer-icon"></i>
+                    <i class="fab fa-twitter footer-icon"></i>
+                    <i class="fab fa-facebook-f footer-icon"></i>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="row">
+                        <div class="col-10">
+                            <span class="footer-item px-3">Legal</span>
+                            <span class="footer-item px-3">Privacy Center</span>
+                            <span class="footer-item px-3">Privacy Policy</span>
+                            <span class="footer-item px-3">Cookies</span>
+                            <span class="footer-item px-3">About Ads</span>
+                        </div>
+                        <div class="col-2">
+                            <span class="footer-item">USA</span>
+                            <img src="https://masthead.scdn.co/065b62cfb94f49960e7c37413175e2bb/flags/us.svg" style="width: 20px" alt=""> <br>
+                            <span class="footer-item">© 2019 Spotify AB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        </script>
+</body>
+</html>
