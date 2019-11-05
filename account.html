@@ -8,12 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <title>Spotify</title>
+    <title>Account</title>
 </head>
 <body>
+    <style>
+        .navbar-account{
+            background: black;
+        }
+    </style>
 
     <!--Navbar starts-->
-    <nav class="navbar navbar-expand-lg px-lg-5 mx-lg-5 sticky-top">
+    <nav class="navbar navbar-account navbar-expand-lg px-lg-5 mx-lg-5 sticky-top">
         <a class="navbar-brand" href="#">
             <div class="spotify-logo">
                 <i class="fab fa-spotify"></i> <span>Spotify</span>
@@ -57,7 +62,7 @@
                     <i class="nav-link fas fa-chevron-down"></i>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <a class="nav-link" href="account.html">Account</a>
+                    <a class="nav-link" href="#">Account</a>
                 </li>
                 <li class="nav-item d-lg-none">
                     <a class="nav-link" href="#">Log Out</a>
@@ -67,157 +72,7 @@
     </nav>
     <!--Navbar ends-->
 
-    <!--Jumbotron starts-->
-    <div class="main-page">
-        <div class="gradient-main-page">
-            <div class="wrapper mx-md-5">
-                <div class="container pt-5" style="padding-bottom: 200px;">
-                    <div class="row pt-5">
-                        <div class="col-lg-4 col-12">
-                            <div class="row main-text-content">
-                                <div class="col-12 p-0">
-                                    <div>
-                                        <span style="font-size: 11px;">Recently Played</span>
-                                    </div>
-                                    <div>
-                                        <h1>Jump back in</h1>
-                                    </div>
-                                    <div>
-                                        <h3 style="font-size: 20px;" class="pr-3">Pick up your music right where you left off</h3>
-                                    </div>
-                                    <div class="my-5">
-                                        <a id="open-web-player-btn" class="btn btn-success" role="button" style="border-radius: 500px; font-size: 16px; padding: 19px 56px 21px; line-height: 1;" href="home.html">Open Web Player</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-12">
-                            <div class="row">
-                                <div class="col-md-4 col-6 p-1 albums">
-                                    <div>
-                                        <img src="http://nadzeya-makeyeva.com/uploads/images/fobos_9.png" class="card-img" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6 p-1 albums">
-                                    <div>
-                                        <img src="https://www.thisdayinmusic.com/wp-content/uploads/2018/05/ok-computer.jpg" class="card-img"  alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6 p-1 albums"> 
-                                    <div>
-                                        <img src="http://images.genius.com/133679ee821526412e00bd82af7336b5.1000x1000x1.jpg" class="card-img" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6 p-1 albums">
-                                    <div>
-                                        <img src="https://images.genius.com/802f2f51781f25232eae5349cf7b1130.1000x1000x1.jpg" class="card-img" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6 p-1 albums">
-                                    <div>
-                                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d0/18/71/d018712d-13c1-8629-be54-3b360a467e1a/05099960946652.rgb.jpg/600x600bf.png" class="card-img"  alt="">  
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6 p-1 albums"> 
-                                    <div>
-                                        <img src="https://m.media-amazon.com/images/I/81hZQ2H1wHL._SS500_.jpg" class="card-img" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow-down" style="text-align: center;">
-                            <i class="fas fa-chevron-down arrow-after-first-block"></i>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </div>
-    <!--Jumbotron ends-->
 
-    <!--Latest trends-->
-    <div class="latest-trends">
-        <div class="container">
-            <div class="container-latest-trends">
-                <h1>Your latest listening trends</h1>
-            </div>
-            <div class="row mt-5 pt-5">
-                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 lol">
-                    <div class="card-div">
-                        <div class="img-div">
-                            <img src="https://i.pinimg.com/originals/9a/bf/05/9abf0521df802d09eeae663eb9ee2042.jpg" class="card-img" alt="">
-                        </div> 
-                        <div class="artist-div">
-                            <span>Top artist</span>
-                        </div>   
-                        <div class="h3-div">
-                            <h3>Nicolas Jaar</h3>
-                        </div>  
-                        <div class="play-now-div">
-                            <span>Play now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 lol">
-                    <div class="card-div">
-                        <div class="img-div">
-                            <img src="http://s3.amazonaws.com/quietus_production/images/articles/12991/moderat_1375693713_crop_560x550.0.jpg" class="card-img" alt="">
-                        </div> 
-                        <div class="artist-div">
-                            <span>Top artist</span>
-                        </div>   
-                        <div class="h3-div">
-                            <h3>Moderat</h3>
-                        </div>  
-                        <div class="play-now-div">
-                            <span>Play now</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Latest trends ends-->
-
-    <!--Neponyatnyj block starts-->
-    <div class="container container-last-block">
-        <h3>Make the most of Spotify</h3>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-12 pb-4">
-                <div class="py-3">
-                    <h4 class="last-h4">Manage your account</h4>
-                </div>
-                <div class="py-2">
-                    <p class="last-p">Edit your profile, change your password, and update your payment information.</p>
-                </div>
-                <div>
-                    <a href="" class="strange-span">Manage account</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-12 pb-4">
-                <div class="py-3">
-                    <h4 class="last-h4">Get our free app</h4>
-                </div>
-                <div class="py-2">
-                    <p class="last-p">Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
-                </div>
-                <div>
-                    <a href="" class="strange-span">Download desktop app</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-12 pb-4">
-                <div class="py-3">
-                    <h4 class="last-h4">Listen on the web</h4>
-                </div>
-                <div class="py-2">
-                    <p class=last-p>To play and share music without the app, all within your browser, go to play.spotify.com.</p>
-                </div>
-                <div>
-                    <a href="" class="strange-span">Open web player</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--footer starts-->
     <div class="footer">
@@ -305,12 +160,10 @@
         </div>
     </div>
     <!--end of footer-->
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     <script src="main.js"></script>
-
+    
 </body>
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <style>
+        body, html{
+            max-width: 100%;
+        }
+        body, html {
+            overflow-x: hidden;
+        }
+        .navbar-left{
+            background-color: black;
+            height: 100vh;
+        }
+        .home-icon{
+            display: inline-block;
+            font-size: 12px;
+        }
+        .nav-link-home{
+            font-size: 12px;
+            display: inline-block;
+        }
+        #sign-up-btn{
+            background:white;
+            color:black;
+            border: 1px solid white;
+            border-radius: 100px;
+            width:120px;
+            font-size: 12px;
+        }
+        #login-btn{
+            background:black;
+            color:white;
+            border: 1px solid white;
+            border-radius: 100px;
+            width:120px;
+            font-size: 12px;
+        }
+    </style>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-2 navbar-left sticky-left">
+                <a class="navbar-brand" href="#">
+                    <div class="spotify-logo">
+                        <i class="fab fa-spotify"></i> <span>Spotify</span>
+                    </div>
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <i class="fas fa-home home-icon"></i>
+                        <a class="nav-link nav-link-home" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                            <i class="fas fa-search home-icon"></i>
+                        <a class="nav-link nav-link-home" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                            <i class="far fa-bookmark home-icon"></i>
+                        <a class="nav-link nav-link-home" href="#">Your library</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="sign-up-btn" class="btn btn-success" role="button">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="login-btn" class="btn btn-success" role="button">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <style>
+                .main-container-home{
+                    background: #1A3960;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #1A3960, rgb(0, 18, 46));  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #1A3960, rgb(0, 18, 46)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: white;
+                }
+                .home-nav-item{
+                    list-style-type: none;
+                    padding: 20px 20px;
+                    font-size: 14px;
+                    color: white;
+                    opacity: 0.5;
+                    font-family: 'Raleway', sans-serif;
+                }
+                .home-nav{
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .home-nav:first-child{
+                    padding-left: 0px;
+                }
+                .spinner-border{
+                    margin-left: 50%;
+                    margin-top: 250px;
+                }
+            </style>
+            <div class="col-10 main-container-home p-0">
+                <div class="nav">
+                    <ul class="home-nav">
+                        <li class="home-nav-item">trending</li>
+                        <li class="home-nav-item">podcasts</li>
+                        <li class="home-nav-item">moods and genres</li>
+                        <li class="home-nav-item">new releases</li>
+                        <li class="home-nav-item">discover</li>
+                    </ul>
+                </div>
+                <div id="div-with-music">
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,3 +1,23 @@
+.text-popover{
+    color:black;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    margin-top: 100px;
+    outline: none;
+}
+.text-popover:hover{
+    color:rgb(13, 0, 126);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    text-decoration: none;
+}
+.text-popover-logout{
+    color:gray;
+}
 .main-page{
     background: #B15C9E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #B15C9E, #7393C6);  /* Chrome 10-25, Safari 5.1-6 */
@@ -76,7 +96,7 @@ li i {
         font-size: 18px;
     }
 }
-.fa-chevron-down{
+.arrow-after-first-block{
     margin-top: 50px;
     font-size: 20px;
     font-weight: 900;
@@ -232,4 +252,28 @@ li i {
     color:white;
     margin-top: 0;
     font-size: 13px;
+}
+.container-last-block{
+    padding: 70px 0px;
+}
+.container-last-block h3{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 0px;
+    font-size: 40px;
+}
+.last-h4{
+    color:black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.last-p{
+    font-size: 16px;
+}
+.strange-span {
+    color:rgb(12, 209, 12);
+}
+.strange-span:hover {
+    color:green;
 }
