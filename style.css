@@ -277,3 +277,71 @@ li i {
 .strange-span:hover {
     color:green;
 }
+
+/*           CSS FOR ACCOUNT PAGE            */
+
+.navbar-account{
+    background: black;
+}
+
+/*           CSS FOR HOME PAGE               */
+
+.main-container-home{
+    background: #1A3960;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1A3960, rgb(0, 18, 46));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1A3960, rgb(0, 18, 46)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.home-nav-item{
+    list-style-type: none;
+    padding: 20px 20px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+    font-family: 'Raleway', sans-serif;
+}
+.home-nav{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.home-nav:first-child{
+    padding-left: 0px;
+}
+.spinner-border{
+    margin-left: 50%;
+    margin-top: 250px;
+}
+body, html{
+    max-width: 100%;
+}
+body, html {
+    overflow-x: hidden;
+}
+.navbar-left{
+    background-color: black;
+}
+.home-icon{
+    display: inline-block;
+    font-size: 12px;
+}
+.nav-link-home{
+    font-size: 12px;
+    display: inline-block;
+}
+#sign-up-btn{
+    background:white;
+    color:black;
+    border: 1px solid white;
+    border-radius: 100px;
+    width:120px;
+    font-size: 12px;
+}
+#login-btn{
+    background:black;
+    color:white;
+    border: 1px solid white;
+    border-radius: 100px;
+    width:120px;
+    font-size: 12px;
+}

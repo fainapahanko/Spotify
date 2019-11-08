@@ -19,26 +19,33 @@ function loadMusic(artist){
                 "x-rapidapi-key": "27579eb660msh15a2248514f7b35p1ae83djsnf94b95f7dc4d"
             },
             method: "GET"
-        }).then(function(res){
-            return res.json()
-        }).then(function(songs){
-            console.log(songs)
+        })
+        .then(res => res.json())
+        .then(songsRes => {
+            console.log(songsRes)
+            let songs = songsRes.data
+            var spinner = document.querySelector(".spinner-border.text-warning")
+            spinner.style.display ="none"
 
             var albumsDiv = document.querySelector("#div-with-music")
-            albumsDiv.innerHTML = "";
+
             songs.forEach(song => {
                 albumsDiv.innerHTML += `
-                    <div class="col-sm-2>
-                        <img src="${track.album.cover}" />
-                        <span>${track.title}</span>
+                    <div class="col-sm-3">
+                        <img src="${song.album.cover_medium}" />
+                        <div>
+                            <span>${song.title}</span>
+                        </div>
                     </div>
                 `
+                console.log(song.album.cover)
             });
         })
     }
 }
 
+
 window.onload = function(){
     loadMusic(artists)
-    setTimeout(loadMusic, 1000) 
+    setTimeout(loadMusic, 2000) 
 }
