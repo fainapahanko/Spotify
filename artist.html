@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .navbar-left{
+            min-height: 100vh;
+        }
+        .buttons-div{
+            text-align: center;
+            padding: 40px 0px;
+        }
+        .buttons-div :last-child {
+            margin-left: 30px;
+            border: 1px solid white !important;
+            background: rgba(255,255,255,0) !important;
+        }
+        .buttons-div a {
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+        }
+        #albumCover{
+            margin:0 !important;
+        }
+        .nav-div{
+            text-align: center;
+            padding: 10px 0px;
+        }
+        a{
+            display: inline-block;
+        }
+        .artist-name-div{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .artist-name-div h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .cards-with-albums{
+            margin-right:0px;
+            max-width: 100%;
+        }
+        .album-title{
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            opacity: 0.7;
+        }
+        .album-artist{
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            opacity: 0.6;
+        }
+    </style>
+
+    <!--start of navbar-left-->
+    <div class="wrapper">
+        <div class="row" id="main-row">
+            <!--end of navbar-left-->
+
+        </div>
+    </div>
+
+    <script>
+    
+        window.onload = () => {
+            var urlParams = new URLSearchParams(window.location.search);  
+            var artistId = urlParams.get("artistId")
+            var artistName = urlParams.get("artistName")
+            console.log(artistId)
+            console.log(artistName)
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/artist/" + artistId + "/albums", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+                    "x-rapidapi-key": "27579eb660msh15a2248514f7b35p1ae83djsnf94b95f7dc4d"
+                }
+            })
+            .then(response => response.json())
+            .then(artist => {
+                console.log(artist)
+                let albumCover = document.querySelector("#main-row");
+                console.log(artist.name)
+                let albums = artist.data 
+                console.log(albums)
+                albumCover.innerHTML = `
+                <div class="col-2 navbar-left sticky-left">
+                    <a class="navbar-brand">
+                        <div class="spotify-logo">
+                            <i class="fab fa-spotify" href="home.html"></i> <span href="home.html">Spotify</span>
+                        </div>
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <i class="fas fa-home home-icon"></i>
+                            <a class="nav-link nav-link-home" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                                <i class="fas fa-search home-icon"></i>
+                            <a class="nav-link nav-link-home" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                                <i class="far fa-bookmark home-icon"></i>
+                            <a class="nav-link nav-link-home" href="#">Your library</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a id="sign-up-btn" class="btn btn-success" role="button">Sign up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="login-btn" class="btn btn-success" role="button">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-10 main-container-home">
+                    <div style="margin: 0px" id="albumHeader">
+                        <div class="artist-name-div">
+                            <h2>${artistName}</h2>
+                        </div>
+                        <div class="buttons-div">
+                            <a id="open-web-player-btn" class="btn btn-success btn-play" role="button"  href="home.html">Play</a>
+                            <a id="open-web-player-btn" class="btn btn-success btn-follow" role="button"  href="home.html">Follow</a>
+                        </div>
+                        <div class="nav-div">
+                            <a class="nav-link nav-link-home" style="color: white; opacity: 0.5;" href="#">Overview</a>
+                            <a class="nav-link nav-link-home" style="color: white; opacity: 0.5;" href="#">Related artist</a>
+                            <a class="nav-link nav-link-home" style="color: white; opacity: 0.5;" href="#">About</a>
+                        </div>
+                    </div>
+                    <div class="px-5" id="albumCover">
+                        <h2>Albums</h2>
+                        <div class="row" id="cards-with-albums">
+
+                        </div>
+                    </div>
+                </div>
+                `
+                console.log(albums)
+                albums.forEach(album => {
+                    let cardsDiv = document.querySelector("#cards-with-albums")
+                    cardsDiv.innerHTML += `
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                        <img src="${album.cover}" style="min-width:150px;" />
+                        <div>
+                            <h5 class="album-title">${album.title}</h5>
+                            <h5 class="album-artist">${artistName}</h5>
+                        </div>
+                    </div>
+                    `
+                });
+            })
+        }
+    
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
