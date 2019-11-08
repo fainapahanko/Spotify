@@ -34,7 +34,9 @@ function loadMusic(artist){
                     <div class="col-sm-3">
                         <img src="${song.album.cover_medium}" />
                         <div>
-                            <span>${song.title}</span>
+                            <a href="" ><span>${song.title}</span></a>
+                            <a  href="album.html?albumID=${song.album.id}"><span>${song.album.title}</span></a>
+                            <a  href="artist.html?artistId=${song.artist.id}&artistName=${song.artist.name}"><span>${song.artist.name}</span></a>
                         </div>
                     </div>
                 `
